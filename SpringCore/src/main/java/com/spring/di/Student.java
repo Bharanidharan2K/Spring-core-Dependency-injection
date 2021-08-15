@@ -10,9 +10,7 @@ public class Student {
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
 	}
-//	public String getStudentName() {
-//		return this.studentName;
-//	}
+
 	public void displayStudentInfo() {
 		System.out.println("Student ID is : "+id);
 		System.out.println("Student Name is : "+ studentName);
