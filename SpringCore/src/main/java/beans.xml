@@ -6,10 +6,19 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+	<bean id="math_cheat" class="com.spring.di.MathCheat">
+	</bean>
+
 	<bean id="student" class="com.spring.di.Student">
-		<property name="mathcheat">
-			<bean class="com.spring.di.MathCheat">
-			</bean>
+		<property name="mathcheat" ref="math_cheat">
+
+		</property>
+	</bean>
+
+	<bean id="another_student" class="com.spring.di.AnotherStudent">
+		<property name="mathcheat" ref="math_cheat">
+
 		</property>
 	</bean>
 
