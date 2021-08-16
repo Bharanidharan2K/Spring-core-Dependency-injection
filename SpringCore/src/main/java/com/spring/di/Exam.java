@@ -7,9 +7,7 @@ public class Exam {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 		Student student = context.getBean("student", Student.class);
-		student.cheat();
-		AnotherStudent anotherStudent = context.getBean("another_student", AnotherStudent.class);
-		anotherStudent.cheat();
+		student.cheating();
 		
 	}
 }

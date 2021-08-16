@@ -2,13 +2,12 @@ package com.spring.di;
 
 public class Student {
 
-	private MathCheat mathcheat;
+	private Cheat cheat;
 
-	public void setMathcheat(MathCheat mathcheat) {
-		this.mathcheat = mathcheat;
+	public void setCheat(Cheat cheat) {
+		this.cheat = cheat;
 	}
-
-	public void cheat() {
-		mathcheat.mathCheat();
+	public void cheating() {
+		cheat.cheat();
 	}
 }
