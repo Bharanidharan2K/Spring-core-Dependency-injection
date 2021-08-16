@@ -1,16 +1,14 @@
 package com.spring.di;
 
 public class Student {
-	private int id;
-	private String studentName;
-	public void setId(int id) {
-		this.id = id;
+
+	private MathCheat mathcheat;
+
+	public void setMathcheat(MathCheat mathcheat) {
+		this.mathcheat = mathcheat;
 	}
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
-	}
-	public void displayStudentInfo() {
-		System.out.println("Student ID is : "+id);
-		System.out.println("Student Name is : "+ studentName);
+
+	public void cheat() {
+		mathcheat.mathCheat();
 	}
 }
