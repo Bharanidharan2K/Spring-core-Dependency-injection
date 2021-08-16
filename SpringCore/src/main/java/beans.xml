@@ -6,15 +6,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
-	<bean id="math_cheat" class="com.spring.di.MathCheat">
-	</bean>
-	<bean id="science_cheat" class="com.spring.di.ScienceCheat">
-	</bean>
-
-	<bean id="student" class="com.spring.di.Student">
-		<property name="cheat" ref="science_cheat" />
-
+	<bean id="missed_call_service" class="com.spring.service.MissedCallService"></bean>
+	<bean id="airtel" class="com.spring.service.Airtel">
+		<property name="service" ref="missed_call_service" />
 	</bean>
 
 </beans>
